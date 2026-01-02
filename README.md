@@ -8,6 +8,6 @@ This repository contains case studies and code examples demonstrating real-world
 - Lessons learned and best practices
 
 Technologies include:
-#todo
+PHP, nodeJs, docker, postgreSQL.
 
 The goal of this repo is to showcase practical experience working with existing systems and delivering reliable fixes.
