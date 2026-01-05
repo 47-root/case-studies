@@ -18,6 +18,7 @@ Route::middleware('auth:api')->post('/wallet/create', [WalletController::class, 
 Route::middleware('auth:api')->get('/wallet/list', [WalletController::class, 'list'])->middleware('can:wallet.list');
 
 Route::middleware(['auth:api'])->group(function () {
+
     Route::delete('/wallet/delete/{wallet_id}',[WalletController::class, 'delete'])->whereUuid('wallet_id')->middleware('can:wallet.delete,wallet_id');
     Route::post('/wallet/update/{wallet_id}',[WalletController::class, 'update'])->whereUuid('wallet_id')->middleware('can:wallet.update,wallet_id');
     Route::post('/wallet/import', [WalletController::class, 'import'])->middleware('can:general.userexists');
