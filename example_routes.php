@@ -10,6 +10,7 @@ use App\Http\Controllers\WalletController;
 use App\Http\Controllers\BlockchainController;
 use App\Http\Controllers\SwapController;
 
+
 Route::post('/create', [AuthController::class, 'create']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
